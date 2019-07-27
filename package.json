@@ -1,0 +1,24 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DemerzelSolutions/CryptoCompareConnector.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DemerzelSolutions/CryptoCompareConnector/issues"
+  },
+  "homepage": "https://github.com/DemerzelSolutions/CryptoCompareConnector#readme",
+  "dependencies": {
+    "@grpc/proto-loader": "^0.5.1",
+    "grpc": "^1.22.2",
+    "kafka-node": "^4.1.3",
+    "ws": "^7.1.1"
+  }
+}

@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package Nethermind.Grpc;
+
+service NethermindService {
+    rpc Query (QueryRequest) returns (QueryResponse) {}
+    rpc Subscribe(SubscriptionRequest) returns (stream SubscriptionResponse) {}
+}
+
+message QueryRequest {
+    repeated string args = 1;
+}
+
+message QueryResponse {
+    string data = 1;
+}
+
+message SubscriptionRequest {
+    repeated string args = 1;
+}
+
+message SubscriptionResponse {
+    string data = 1;
+}
