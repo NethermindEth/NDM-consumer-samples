@@ -23,7 +23,7 @@ function initGrpc() {
       process.exit(1);
     }
     console.log(`Connected to gRPC @ ${address}`);
-    var call = client.subscribe({args: []});
+    var call = client.subscribe({client: 'ndm-consumer', args: []});
     call.on('data', function(data ) {
       console.log(data);
     });
